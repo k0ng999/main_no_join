@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesCube</title>
+    <link rel="stylesheet" href="/CSS/main_no_join/main_no_join.css">
+    <link rel="icon" href="/IMAGES/NotesCube.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <div id="NotesCube">
+            <img id="logo-img" src="/IMAGES/NotesCube_bez_fona.png" alt="NotesCube Logo">
+            <b>NotesCube</b>
+        </div>
+        <div id="div_nav">
+            <ul id="nav">
+                <li><a href="/HTML/in_up/in_up.html" class="header_link" target="_parent" id="active_page">Главная</a>
+                </li>
+                <li><a href="/HTML/in_up/in_up.html" class="header_link" target="_parent">Моя страничка</a></li>
+                <li><a href="/HTML/in_up/in_up.html" class="header_link" target="_parent">Мои заметки</a></li>
+                <li><a href="/HTML/in_up/in_up.html" class="header_link" target="_parent">Создать новую заметку</a></li>
+            </ul>
+        </div>
+        <div id="some_block">
+            <a href="/HTML/in_up/in_up.html" target="_parent" id="link_on_circle">Вход</a>
+        </div>
+        <div id="menu-toggle">
+            <span>☰</span>
+        </div>
+    </div>
+
+
+    <div id="header_card1" data-tilt>
+        <div id="header_card1_text1">Создавай</div>
+    </div>
+    <div id="header_card2" data-tilt>
+        <div id="header_card2_text2">Делись</div>
+    </div>
+    <div id="header_card3" data-tilt>
+        <div id="header_card3_text3">Объединяйся</div>
+    </div>
+
+
+    <div id="notes_header"> NotesCube</div>
+
+
+    <div id="bottomUpPage">↑</div>
+
+
+    <div class="registration-table">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Имя аккаунта" required id="link_enter"
+                               class="btn btn-white btn-animate" title="Придумайте имя аккаунта"></td>
+                    <td>
+                        <button type="submit" id="link_submit" class="btn btn-white btn- animate"
+                                title="Нажмите для перехода к регистрации">Продолжить
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    
+
+
+    <div id="main-container" class="main_shadow">
+        <div class="hl_shadow"></div>
+        <div id="create_notes_block">
+
+            <h1 id="info_tetx_right_video">Создавай заметки</h1>
+            <h2 id="description_create_notes" class="slide-in-right ">При создании заметок ты можешь выбрать такие языки
+                программирования, как:
+                <div class="text_on_description">Python, PHP, HTML, CSS, Javascript, Java, C#, C++, C, Go.</div>
+                <div id="text_xreate_no_sint">Также можно создавать заметки без подсветки синтаксиса.</div>
+            </h2>
+
+            <div id="video_create" class="card card_first slide-in-left video-mouse card_shadow" 
+                 onmouseover="playVideo('.card-video_first')"
+                 onmouseout="pauseVideo('.card-video_first')" onclick="restartVideo('.card-video_first')">
+                <video class="card-video card-video_first " loop muted>
+                    <source src="/IMAGES/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-note_on video-mouse_off">Нажмите чтобы видео началось заново</div>
+                <div class="card-note_off">Наведите мышку на видео чтобы увидеть миниатюру</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+    <div id="create_notes_block_1">
+        <h1 id="create_notes_block_h1_1">Делись заметками</h1>
+    </div>
+
+
+    <div id="main-container1" class="main-container1 slide-in-bottom1">
+    </div>
+    <div id="create_notes_block1">
+        <h1 id="info_tetx_right_video1" class="slide-in-top1">Выкладывай новые заметки к себе на страничку</h1>
+        <h2 id="description_create_notes1" class="slide-in-right1 ">Ты можешь выложить заметку, которая будет доступна
+            только подписчикам или друзьям.</h2>
+
+        <div id="video_create1" class="card1 card_first1 slide-in-left1 video-mouse"
+             onmouseover="playVideo('.card-video_first1')"
+             onmouseout="pauseVideo('.card-video_first1')" onclick="restartVideo('.card-video_first1')">
+            <video class="card-video1 card-video_first1 " loop muted>
+                <source src="/IMAGES/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="card-note_on1 ">Нажмите на видео чтобы оно началось заново</div>
+            <div class="card-note_off1 ">Наведите мышку на видео чтобы увидеть миниатюру</div>
+        </div>
+    </div>
+
+
+    <div id="main-container2" class="main-container2 slide-in-bottom2">
+    </div>
+    <div id="create_notes_block2">
+        <h1 id="info_tetx_right_video2" class="slide-in-top2">Имей общие заметки с друзьями или коллегами</h1>
+        <h2 id="description_create_notes2" class="slide-in-right2 ">Ты можешь объединить целую папку для кооперативного
+            использования. </h2>
+
+        <div id="video_create2" class="card2 card_first2 slide-in-left2 video-mouse"
+             onmouseover="playVideo('.card-video_first2')"
+             onmouseout="pauseVideo('.card-video_first2')" onclick="restartVideo('.card-video_first2')">
+            <video class="card-video2 card-video_first2 " loop muted>
+                <source src="/IMAGES/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="card-note_on2">Нажмите на видео чтобы оно началось заново</div>
+            <div class="card-note_off2">Наведите мышку на видео чтобы увидеть миниатюру</div>
+        </div>
+
+    </div>
+
+    <div><img id="logo-img_footer" src="/IMAGES/NotesCube_bez_fona.png" alt="NotesCube Logo"></div>
+
+</div>
+
+
+<div class="pg-footer">
+    <footer class="footer">
+        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+             preserveAspectRatio="none">
+            <path class="footer-wave-path"
+                  d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+        </svg>
+        <div class="footer-content">
+            <div id="NotesCube_bottom">
+                <img id="logo-img_bottom" src="/IMAGES/NotesCube_bez_fona.png" alt="NotesCube Logo">
+                <h1>NotesCube</h1>
+            </div>
+            <div id="donat">
+                <div class="donat-header">
+                    <h2 id="donat_text">Поддержите Проект</h2>
+                    <h2 id="help_project">Появилась идея для улучшения сайта?</h2>
+                </div>
+                <div class="donat-footer">
+                    <p id="donat_text_description">Сайт является полностью бесплатным, и мне было бы приятно, если бы вы
+                        поддержали проект донатом и тем самым помогли ему развиваться.</p>
+                    <p id="help_text_description">Напишите предложив свою идею для сайта. Так как сайт только начал своё
+                        существование, буду рад почитать идеи для его развития.</p>
+                </div>
+                <button type="submit" id="donat_bottom"
+                        title="Нажмите для перехода к заполнению формы перевода средств">Поддержать
+                </button>
+                <button type="submit" id="help_bottom" title="Нажмите для перехода к заполнению формы отправки письма">
+                    Написать
+                </button>
+            </div>
+            <div id="footer-section">
+                <h3>Контакты</h3>
+                <p>
+                <p class="inline">Email:</p>
+                <p class="inline h_text"> NotesCube@mail.ru</p></p>
+                <p>
+                <p class="inline">Телефон:</p>
+                <p class="inline h_text"> +7 (978) 592-18-36</p></p>
+            </div>
+            <div id="footer-police">
+                <h3>О нас</h3>
+                <p><a href="#">Конфиденциальность</a></p>
+                <p><a href="#">Поддержка</a></p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="footer-copyright-wrapper">
+                <p class="footer-copyright-text">
+                    <span class="footer-copyright-link">©2024 | NotesCube | Автор: k0ng999</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+<script src="/JS/main_no_join/create_notes_dinamic.js"></script>
+<script src="/JS/main_no_join/footer_button.js"></script>
+<script src="/JS/main_no_join/card_video.js"></script>
+<script src="/JS/main_no_join/link_name.js"></script>
+<script src="/global_js/menu_toggle.js"></script>
+<script src="/JS/main_no_join/create_notes_dinamic2.js"></script>
+<script src="/JS/main_no_join/create_notes_dinamic3.js"></script>
+<script src="/JS/main_no_join/logo_upper.js"></script>
+<script src="/JS/main_no_join/video_mouse.js"></script>
+<script src="/JS/main_no_join/3d_block.js"></script>
+<script src="/JS/main_no_join/block_move_page.js"></script>
+<script src="/global_js/up_arrow.js"></script>
+
+
+</body>
+</html>
